@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-class LoginUsuario(unittest.TestCase):
+class LoginUsuario_lucia(unittest.TestCase):
 
     def setUp(self):
         self.s = Service(ChromeDriverManager().install())
@@ -19,7 +19,7 @@ class LoginUsuario(unittest.TestCase):
         self.driver.maximize_window()
         self.driver.implicitly_wait(time_to_wait=10)
 
-    def test_login_page_correct(self):
+    def test_login_page_correct01(self):
         usuario = self.driver.find_element(By.ID, 'txtUsername').send_keys("Admin ")
         password = self.driver.find_element(By.ID, 'txtPassword').send_keys("admin123")
         login = self.driver.find_element(By.ID, "btnLogin").click()
@@ -30,7 +30,7 @@ class LoginUsuario(unittest.TestCase):
 
 
 
-    def test_login_page_incorrect(self):
+    def test_login_page_incorrect01(self):
         usuario = self.driver.find_element(By.ID, 'txtUsername').send_keys("Admin")
         password = self.driver.find_element(By.ID, 'txtPassword').send_keys("admin12345")
         login = self.driver.find_element(By.ID, "btnLogin").click()
