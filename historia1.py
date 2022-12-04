@@ -55,7 +55,7 @@ class LoginUsuario_lucia(unittest.TestCase):
 
 if __name__ == '__main__':
     print("prueba exitosa")
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\Numbers Tech\\Desktop\Python\\pruebas-automatizada\\Reportes'))
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:\\Users\\Lucia Laptop\\Desktop\Python\\pruebas-automatizada\\Reportes'))
     #unittest.main()
 
 
